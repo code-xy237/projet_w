@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculatrice Basique</title>
+    </head>
+    <body>
+        <form>
+            <h1>Calc Codex</h1>
+            <input type="text" id="display">
+            <br>
+
+            <button onclick="addToDisplay('0')">0</button>
+            <button onclick="addToDisplay('1')">1</button>
+            <button onclick="addToDisplay('2')">2</button>
+            <button onclick="addToDisplay('3')">3</button>
+            <button onclick="addOperator('+')"><strong>+</strong></button>
+            <br>
+
+            <button onclick="addToDisplay('4')">4</button>
+            <button onclick="addToDisplay('5')">5</button>
+            <button onclick="addToDisplay('6')">6</button>
+            <button onclick="addOperator('-')"><strong>-</strong></button>
+            <button onclick="addOperator('/')"><strong>/</strong></button>
+            <br>
+
+            <button onclick="addToDisplay('7')">7</button>
+            <button onclick="addToDisplay('8')">8</button>
+            <button onclick="addToDisplay('9')">9</button>
+            <button onclick="addOperator('*')"><strong>*</strong></button>
+            <button onclick="addOperator('=')"><strong>=</strong></button>
+            <br>
+        </form>
+
+        <script>
+            let display = document.getElementById('display');
+            function addToDisplay(value){
+                display.value += value;
+            }
+            function addOperator(operator){
+                display.value += operator
+            }
+        </script>
+
+        <style>
+            body{
+                background-image: url("408249_zvezdy_poverxnost_planeta_1920x1080_-www.GdeFon.ru-.jpg");
+                font-family: Arial, sans-serif;
+                background-size: cover;
+                padding: 0;
+                margin: 0;
+            }
+            form {
+                border-radius: 30px;
+                box-shadow: 0 0 10px rgb(240, 239, 241);
+                margin: 50px auto;
+                padding: 30px;
+                width: 500px;
+                backdrop-filter: blur(7px);
+            }
+            button{
+                background-color: #ffffff;
+                border: none;
+                border-radius: 10px;
+                color: #111310;
+                font-size: 20px;
+                padding: 10px;
+                margin-top: 10px;
+                margin: 15px;
+                width: 10%;
+            }
+            input[type="text"],
+            select {
+                border: none;
+                border-radius: 30px;
+                display: block;
+                font-size: 16px;
+                margin-bottom: 15px;
+                padding: 10px;
+            }
+            h1{
+                color: rgb(0, 255, 13);
+            }
+            footer{
+                margin: 0px;
+                padding: 100px;
+                text-align: center;
+                background-color: orangered;
+                color: azure;
+            }
+        </style>
+
+        <footer>
+            <p>Calc Codex web Design , Copyright &copy; 2024, by Borel Junior™ ? ? </p>
+        </footer>
+
+    </body>
+</html>
